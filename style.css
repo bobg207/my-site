@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: red;
+  background-color: #747272;
   width: 90%;
   height: 15vh;
   margin: 0 auto;
@@ -19,12 +19,32 @@ header {
 }
 
 .logo-wrapper {
-  width: 30%;
-  height: 40%;
-  border: 2px solid black;
+  width: 150px;
+  height: 150px;
 }
 
 .logo {
   width: 100%;
   height: auto;
 }
+ul {
+      width: fit-content;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+    }
+
+    li {
+      margin: .75rem;
+      font-size: 1.5rem;
+      list-style-type: none;
+    }
+
+    a {
+      color: rgb(196, 145, 232);
+      text-decoration-line: none;
+    }
+
+    a:hover {
+      color: rgb(75, 0, 130);
+    }
