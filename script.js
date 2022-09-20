@@ -1,6 +1,6 @@
 const burgerBtn = document.querySelector('#burger-btn');
-const barsIcon = document.querySelector('#menu-open');
-const xmarkIcon = document.querySelector('#menu-closed');
+const xmarkIcon = document.querySelector('#menu-open');
+const barsIcon = document.querySelector('#menu-closed');
 const navMenu = document.querySelector('.link-wrapper');
 let isOpen = false;
 
