@@ -8,7 +8,6 @@ body {
 }
 
 header {
-  height: 13vh;
   position: relative;
   background-color: #b2aeae;
   display: flex;
@@ -22,32 +21,10 @@ header {
   align-items: center;
 }
 
-svg {
-  width: 20%;
-  max-width: 100px;
-  max-height: 13vh;
+.logo-link {
+  padding: 1rem 0;
+  width: 15vw;
   height: auto;
-  padding-top: .5rem;
-}
-
-.logo-bg{
-  fill: #b2aeae;
-}
-
-.logo-dog-outline {
-  fill: #000;
-}
-
-.logo-dog-body {
-  fill: white;
-}
-
-.logo-dog-face {
-  fill: #000;
-}
-
-.logo-text {
-  fill: #fff;
 }
 
 .link-wrapper {
@@ -99,18 +76,44 @@ svg {
 
 .intro-wrapper {
   height: 80vh;
+  background-image: url("images/general/ocean.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.svg-img {
-  width: 200px;
-  height: auto;
+.intro-text-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2em;
+}
+
+.intro-text-wrapper h1 {
+  width: 350px;
+  font-size: 3rem;
+  font-family: 'Amatic SC', cursive;
+}
+
+.intro-text-wrapper p {
+  color: #000;
 }
 
 @media (min-width: 750px ) {
-  ul {
+  .link-wrapper {
+    position: static;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    background-color: #b2aeae;
+    opacity: 1;
+    border: none;
+  }
+
+  .logo-link {
+    width: 95px;
+  }
+  
+  .link {
+    color: #fff;
+    font-size: 1.25rem;
   }
 
   #menu-open,
@@ -118,5 +121,10 @@ svg {
   #burger-btn {
     display: none;
   }
+
+  .intro-text-wrapper h1 {
+    width: 590px;
+  }
+  
 
 }
