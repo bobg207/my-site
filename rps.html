@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="/css-files/rps.css">
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+        <p>First to five wins!!</p>
+    </header>
+    
+    <div class="game-top">
+        <div class="left-side side">
+            <h2>Player</h2>
+            <div class="btn-wrapper">
+                <button id="rock" class="choice-btn">Rock</button>
+                <button id="paper" class="choice-btn">Paper</button>
+                <button id="scissors" class="choice-btn">Scissors</button>
+            </div>
+            <div class="img-wrapper">
+                <img src="./images/rps-images/rps.png" alt="choice image" class="choice-img" id="player-choice">
+            </div>
+        </div>
+        <div class="middle">
+            <div class="score-wrapper">
+                <div class="player-wins-wrapper scores">
+                    <h3>PLAYER WINS</h3>
+                    <div class="player-wins score">0</div>
+                </div>
+                <div class="ties-wrapper scores">
+                    <h3>TIES</h3>
+                    <div class="ties score">0</div>
+                </div>
+                <div class="computer-wins-wrapper scores">
+                    <h3>COMPUTER WINS</h3>
+                    <div class="computer-wins score">0</div>
+                </div>
+            </div>
+            <div class="outcome">
+                <div class="outcome-text">Let's Play!! First to five wins.</div>
+                <img src="./images/rps-images/left-right.png" alt="arrow to winner" id="arrow">
+            </div>
+            <div class="new-game-wrapper">
+                <button id="new-game" class="choice-btn">New Game</button>
+            </div>
+            
+        </div>
+        <div class="right-side side">
+            <h2 class="header">Computer</h2>
+            <div class="img-wrapper">
+                <img src="./images/rps-images/rps.png" alt="choice image" class="choice-img" id="computer-choice">
+            </div>
+        </div>
+    </div>
+    <div class="game-bottom">
+        <div class="rounds-wrapper">
+            <img src="./images/rps-images/player.png" alt="player image" class="player-img">
+            <div class="rounds" id="player-rounds">
+                
+            </div>
+        </div>
+        
+
+        <div class="rounds-wrapper">
+            <img src="./images/rps-images/computer.png" alt="computer image" class="computer-img">
+            <div class="rounds" id="computer-rounds">
+                
+            </div>
+        </div>
+    </div>
+    <script src="js-files/rps.js"></script>
+</body>
+</html>
