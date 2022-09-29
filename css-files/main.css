@@ -7,15 +7,27 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.section {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* main home page */
+.first-page {
+  height: 100vh;
+  background-image: url("../images/general/ocean.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
   position: relative;
-  background-color: #b2aeae;
   display: flex;
 }
 
 .logo-wrapper {
-  width: 90%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +41,7 @@ header {
 
 .link-wrapper {
   position: absolute;
-  top: 11vh;
+  top: calc(11vh + .1vw);
   right: 5%;
   padding: .5rem 0;
   display: none;
@@ -48,7 +60,7 @@ header {
   max-height: 50px;
   margin: 0;
   padding: .35rem .45rem;
-  background-color: #b2aeae;
+  background-color: #a2d9fb;
   border-radius: 5px;
 }
 
@@ -75,14 +87,9 @@ header {
 
 .intro-wrapper {
   height: 80vh;
-  background-image: url("images/general/ocean.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .intro-text-wrapper {
-  width: 90%;
-  margin: 0 auto;
   padding-top: 2em;
 }
 
@@ -96,13 +103,52 @@ header {
   color: #000;
 }
 
+/* sailing section */
+.sailing-wrapper {
+  margin: 2em 0;
+}
+
+.boat-wrapper {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boat {
+  width: 45%;
+  max-width: 400px;
+  min-width: 300px;
+  margin: 2em 0;
+  background-color: #cac9c9;
+  border-radius: 10px;
+  box-shadow: 5px 2px 15px #8c8c8c;
+}
+
+.boat-img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.boat-name {
+  text-align: center;
+}
+
+.boat-info {
+  margin: .5em 1em;
+}
+
+/* media queries */
 @media (min-width: 750px ) {
   .link-wrapper {
     position: static;
     display: flex;
     flex-direction: row;
-    background-color: #b2aeae;
-    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
     border: none;
   }
 
@@ -111,8 +157,9 @@ header {
   }
   
   .link {
-    color: #fff;
+    color: #000;
     font-size: 1.25rem;
+    font-weight: bold;
   }
 
   #menu-open,
@@ -125,5 +172,6 @@ header {
     width: 590px;
   }
   
-
+  .boat-wrapper {
+  }
 }
