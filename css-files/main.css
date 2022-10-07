@@ -37,6 +37,7 @@ header {
   padding: 1rem 0;
   width: 15vw;
   height: auto;
+  cursor: pointer;
 }
 
 .link-wrapper {
@@ -62,6 +63,7 @@ header {
   padding: .35rem .45rem;
   background-color: #a2d9fb;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 #menu-open {

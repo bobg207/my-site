@@ -1,13 +1,52 @@
+.port-page {
+  background-color: #f0c987;
+}
+
+#burger-btn {
+  background-color: #f0c987;
+  cursor: pointer;
+}
+
+h1 {
+  width: 90%;
+  margin: 1em auto;
+  text-align: center;
+  color: #3C153B;
+}
+
 .project-wrapper {
   width: 90%;
   margin: 0 auto;
+  padding-top: 1em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  border: 3px solid #3C153B;
+  border-radius: 10px;
 }
 
 .project {
-  border: 2px solid black;
+  width: 450px;
+  margin: 1.5em;
+  padding: 1em;
+  background-color: #DB4C40;
+  color: #3C153B;
   border-radius: 10px;
+  text-align: center;
+  box-shadow: 10px 10px 10px;
+}
+
+.project h3 {
+  font-size: 2rem;
+}
+
+.play {
+  font-size: 1.5rem;
+  color: #3C153B;
+  text-decoration: none;
+}
+
+.play:hover {
+  color: #89BD9E;
 }
