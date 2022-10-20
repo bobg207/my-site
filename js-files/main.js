@@ -2,6 +2,7 @@ const burgerBtn = document.querySelector('#burger-btn');
 const xmarkIcon = document.querySelector('#menu-open');
 const barsIcon = document.querySelector('#menu-closed');
 const navMenu = document.querySelector('.link-wrapper');
+const navLinks = document.querySelectorAll('.link')
 let isOpen = false;
 
 burgerBtn.addEventListener("click", () => {
