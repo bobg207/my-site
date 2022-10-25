@@ -8,21 +8,16 @@ const linkMenu = document.querySelector(".link-wrapper");
 
 let isOpen = false;
 
-window.addEventListener('load', (event) => {
-  const currentPage = localStorage.getItem("page");
-  alert(currentPage);
-  links.forEach((link, index, objs) => {
-    
-    // if (!currentPage) {
-    //   currentPage = "Home"
-    // }
-    
-    page = link.textContent;
-    
-    if (page === currentPage) {
-      link.style.textDecoration = 'underline'}
-    else {
-      link.style.textDecoration = 'none'};
+(function() {
+  const url = window.location.href;
+  (".link-wrapper a").forEach(function() {
+
+    if (url == this.href) {
+      alert(this.href)
+    //   link.style.textDecoration = 'underline'}
+    // else {
+    //   link.style.textDecoration = 'none'};
+    }
   });
 })
 
@@ -42,5 +37,4 @@ burgerBtn.addEventListener("click", () => {
 
 function getChosenLink(anchor) {
   localStorage.setItem("page", anchor.textContent)
-  alert(localStorage.getItem("page"))
 }
