@@ -15,7 +15,7 @@ body {
 
 /* main home page */
 .first-page {
-  height: 100vh;
+/*   height: 100vh; */
   background-image: url("../images/general/ocean.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -77,9 +77,10 @@ header {
 .link {
   display: block;
   color: #000;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   margin: .5rem 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   list-style-type: none;
 }
 
@@ -88,7 +89,7 @@ header {
 }
 
 .intro-wrapper {
-  height: 80vh;
+  height: 90vh;
 }
 
 .intro-text-wrapper {
@@ -106,8 +107,19 @@ header {
 }
 
 /* sailing section */
+.sailing-title {
+  font-size: 2rem; 
+  margin: 0;
+}
+
+.sailing-intro {
+  font-size: 1.5rem; 
+}
+
 .sailing-wrapper {
-  margin: 2em 0;
+  padding: 1em 0;
+  background-color: #EEE2DF;
+  color: #230C0F;
 }
 
 .boat-wrapper {
@@ -125,7 +137,8 @@ header {
   max-width: 400px;
   min-width: 300px;
   margin: 2em 0;
-  background-color: #cac9c9;
+  background-color: #6A687A;
+  color: #EEE2DF;
   border-radius: 10px;
   box-shadow: 5px 2px 15px #8c8c8c;
 }
@@ -160,7 +173,7 @@ header {
   
   .link {
     color: #000;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
   }
 
@@ -175,5 +188,11 @@ header {
   }
   
   .boat-wrapper {
+  }
+}
+
+@media (min-width: 1150px ) {
+  .link {
+    font-size: 1.75rem;
   }
 }
