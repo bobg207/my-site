@@ -28,6 +28,7 @@ h1 {
 
 .project {
   width: 450px;
+  height: 200px;
   margin: 1.5em;
   padding: 1em;
   background-color: #DB4C40;
@@ -39,6 +40,11 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: scale 1s;
+}
+
+.project:hover {
+  scale: 1.25;  
 }
 
 .project h3 {

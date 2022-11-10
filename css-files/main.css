@@ -15,7 +15,6 @@ body {
 
 /* main home page */
 .first-page {
-/*   height: 100vh; */
   background-image: url("../images/general/ocean.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -35,9 +34,15 @@ header {
 
 .logo-link {
   padding: 1rem 0;
+  cursor: pointer;
   width: 15vw;
   height: auto;
-  cursor: pointer;
+  animation: roll-in 2s linear;
+}
+
+@keyframes roll-in {
+  from {transform: translatex(-160%) rotate(0deg)}
+  to {transform: translatex(0) rotate(360deg)}
 }
 
 .link-wrapper {
@@ -82,10 +87,12 @@ header {
   margin: .5rem 1rem;
   font-size: 1rem;
   list-style-type: none;
+  transition: scale .5s, color .5s;
 }
 
 .link:hover {
-  color: #968d8d;
+  color: #003df5;
+  scale: 1.25;
 }
 
 .intro-wrapper {
@@ -156,8 +163,82 @@ header {
 .boat-info {
   margin: .5em 1em;
 }
+/* END - BOATS */
 
-/* media queries */
+/* PORTFOLIO */
+
+/* END - PORTFOLIO */
+
+/* FOOTER */
+footer {
+  background-color: #6A687A;
+}
+
+.foot-wrapper {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display:flex;
+/*   flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #EEE2DF;
+  border: 1px solid black;
+}
+
+.foot-wrapper div {
+  width: 25%;
+  min-width: 150px;
+  padding: 1rem;
+}
+
+.foot-left {
+  border: 1px solid black;
+}
+
+.foot-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.foot-center {
+  font-size: 1rem;
+  border: 1px solid black;
+}
+
+.foot-right a{
+/*   margin-left: 1rem; */
+  border: 1px solid black;
+}
+/* END - FOOTER */
+
+/* MEDIA QUERIES */
+/* phones */
+@media (max-width: 150px ) {
+  .foot-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foot-left {
+    text-align: center;
+    margin: 0;
+  }
+   
+  .foot-right {
+    margin: 0;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+  
+/* tablets */
 @media (min-width: 750px ) {
   .link-wrapper {
     position: static;
@@ -166,7 +247,7 @@ header {
     background-color: rgba(0, 0, 0, 0);
     border: none;
   }
-
+  
   .logo-link {
     width: 95px;
   }
@@ -186,13 +267,21 @@ header {
   .intro-text-wrapper h1 {
     width: 590px;
   }
-  
-  .boat-wrapper {
-  }
 }
-
-@media (min-width: 1150px ) {
+  
+/* small screens */
+@media (min-width: 1150 ) {
   .link {
     font-size: 1.75rem;
+  }
+
+  .foot-wrapper {
+    justify-content: center;
+    align-items: center
+  }
+
+  .intro-text-wrapper h1 {
+    width: 590px;
+    color: white;
   }
 }
