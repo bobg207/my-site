@@ -19,3 +19,5 @@ burgerBtn.addEventListener("click", () => {
     isOpen = true;
   }  
 });
+
+// MAP JS

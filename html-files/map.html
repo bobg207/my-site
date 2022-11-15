@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Map</title>
+    </style>
+    <link href="../css-files/main.css" rel="stylesheet" type="text/css" />
+    <link href="../css-files/map.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+  </head>
+  
+  <body>
+    <header id="page-top">
+      <div class='section logo-wrapper' id='top'>
+         <a class="logo-link" href="#page-top"><img class='logo-img' src="/images/general/logo.svg" alt="logo"></a>
+     
+        <button id='burger-btn'>
+            <i class="fa-solid fa-bars" id='menu-closed'></i>
+            <i class="fa-solid fa-xmark" id='menu-open'></i>
+        </button>
+        <nav class='link-wrapper'>  
+          <a href="../index.html" class="link">Home</a>
+          <a href="/html-files/sailing.html" class="link">Sailing</a>
+          <a href="/html-files/portfolio.html" class="link">Portfolio</a>
+          <a href="/html-files/about.html" class="link">About</a>
+        </nav>
+      </div>
+    </header>
+    
+    <div id="map"></div>
+    
+    <script src="../js-files/main.js"></script> 
+    <script>
+      const map = L.map('map', {
+        center: [43.67, -70.25],
+        zoom: 13,
+      })
+
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+    </script>
+  </body>
+</html>
