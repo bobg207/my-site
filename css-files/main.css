@@ -220,6 +220,7 @@ header {
 
 /* FOOTER */
 footer {
+  padding: 1.5em 0;
   background-color: #6A687A;
 }
 
@@ -241,7 +242,7 @@ footer {
 }
 
 .foot-center {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .foot-right {
