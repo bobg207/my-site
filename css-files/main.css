@@ -124,7 +124,7 @@ header {
 }
 
 .sailing-wrapper {
-  padding: 1em 0;
+  padding: 2em 0;
   background-color: #EEE2DF;
   color: #230C0F;
 }
@@ -208,10 +208,9 @@ header {
 
 .logo:nth-child(1) {
   position: absolute;
+  z-index: 2;
   width: 200px;
   height: auto;
-  position: absolute;
-  z-index: 2;
   top: 30px;
   right: 20px;
   opacity: .2;
@@ -254,6 +253,8 @@ footer {
 
 .foot-right a{
   margin-left: .75rem;
+  color: #0033ff;
+  font-size: 1.5rem;
 }
 /* END - FOOTER */
 
@@ -279,10 +280,14 @@ footer {
 
 /* MEDIA QUERIES */
 /* phones */
-@media (min-width: 400px ) {
+@media (min-width: 300px ) {
   .foot-left {
     text-align: center;
     margin: 0;
+  }
+
+  .foot-center {
+    font-size: .8rem;
   }
 
   .lang-wrapper {
@@ -290,6 +295,10 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 2em;
+  }
+
+  .lang {
+    font-size: 1rem;
   }
 }
   
