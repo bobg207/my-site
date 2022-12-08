@@ -180,17 +180,41 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 8rem;
+  gap: 8em;
+  text-decoration: none;
 }
 
 .lang {
+  position: relative;
   margin-bottom: 2rem;
   padding-left: 1rem;
   width: 400px;
-  height: 300px;
-  background-color: #faf6f4;
+  height: 400px;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  color: #ffffff;
+  background-color: #4b4949;
   border-radius: 10px;
   box-shadow: 5px 2px 15px #8c8c8c;
+}
+
+.logo {
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  right: 15px;
+  opacity: .2;
+}
+
+.logo:nth-child(1) {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  right: 20px;
+  opacity: .2;
 }
 
 /* END - LANGUAGES */
@@ -233,6 +257,26 @@ footer {
 }
 /* END - FOOTER */
 
+.tweets-body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tweets-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tweets-title {
+  text-align: center;
+}
+
+.tweet {
+  width: 100%;
+  height: auto;
+}
+
+
 /* MEDIA QUERIES */
 /* phones */
 @media (min-width: 400px ) {
@@ -245,7 +289,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 2em;
   }
 }
   
@@ -280,7 +324,7 @@ footer {
   }
 
   .lang-wrapper {
-    gap: 4rem;
+    gap: 4em;
   }
 }
   
@@ -296,6 +340,6 @@ footer {
   }
 
   .lang-wrapper {
-    gap: 6rem;
+    gap: 6em;
   }
 }
